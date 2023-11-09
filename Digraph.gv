@@ -1,0 +1,88 @@
+// Decision Tree
+digraph {
+	size="10,10"
+	node [fontsize=12]
+	edge [fontsize=10]
+	"(src_bytes" [label="(src_bytes <= 3.0)"]
+	"(dst_bytes3" [label="(dst_bytes3 <= 0.675000011920929)"]
+	"(dst_bytes5" [label="(dst_bytes5 <= 0.06499999947845936)"]
+	"(src_bytes2" [label="(src_bytes2 <= 2.5)"]
+	"(dst_bytes7" [label="(dst_bytes7 <= 0.9750000238418579)"]
+	0.0 [label=0.0]
+	"" -> "dst_bytes7 > 0.9750000238418579)"
+	1.0 [label=1.0]
+	"" -> "src_bytes2 > 2.5)"
+	"(src_bytes" [label="(src_bytes <= 0.5)"]
+	1.0 [label=1.0]
+	"" -> "src_bytes > 0.5)"
+	2.0 [label=2.0]
+	"" -> "dst_bytes5 > 0.06499999947845936)"
+	"(src_bytes" [label="(src_bytes <= 0.5)"]
+	"(dst_bytes3" [label="(dst_bytes3 <= 0.024999999441206455)"]
+	4.0 [label=4.0]
+	"" -> "dst_bytes3 > 0.024999999441206455)"
+	1.0 [label=1.0]
+	"" -> "src_bytes > 0.5)"
+	2.0 [label=2.0]
+	"" -> "dst_bytes3 > 0.675000011920929)"
+	"(dst_bytes5" [label="(dst_bytes5 <= 0.7950000166893005)"]
+	"(dst_bytes7" [label="(dst_bytes7 <= 0.2199999988079071)"]
+	"(src_bytes2" [label="(src_bytes2 <= 88.5)"]
+	0.0 [label=0.0]
+	"" -> "src_bytes2 > 88.5)"
+	1.0 [label=1.0]
+	"" -> "dst_bytes7 > 0.2199999988079071)"
+	"(src_bytes2" [label="(src_bytes2 <= 4.5)"]
+	0.0 [label=0.0]
+	"" -> "src_bytes2 > 4.5)"
+	1.0 [label=1.0]
+	"" -> "dst_bytes5 > 0.7950000166893005)"
+	"(src_bytes" [label="(src_bytes <= 0.5)"]
+	"(dst_bytes2" [label="(dst_bytes2 <= 197.5)"]
+	3.0 [label=3.0]
+	"" -> "dst_bytes2 > 197.5)"
+	5.0 [label=5.0]
+	"" -> "src_bytes > 0.5)"
+	2.0 [label=2.0]
+	"" -> "src_bytes > 3.0)"
+	"(dst_bytes5" [label="(dst_bytes5 <= 0.7950000166893005)"]
+	"(dst_bytes" [label="(dst_bytes <= 29.5)"]
+	"(src_bytes3" [label="(src_bytes3 <= 27.5)"]
+	"(src_bytes" [label="(src_bytes <= 6.5)"]
+	2.0 [label=2.0]
+	"" -> "src_bytes > 6.5)"
+	0.0 [label=0.0]
+	"" -> "src_bytes3 > 27.5)"
+	"(src_bytes" [label="(src_bytes <= 732.0)"]
+	0.0 [label=0.0]
+	"" -> "src_bytes > 732.0)"
+	5.0 [label=5.0]
+	"" -> "dst_bytes > 29.5)"
+	"(src_bytes" [label="(src_bytes <= 6.5)"]
+	"(src_bytes2" [label="(src_bytes2 <= 1.5)"]
+	0.0 [label=0.0]
+	"" -> "src_bytes2 > 1.5)"
+	2.0 [label=2.0]
+	"" -> "src_bytes > 6.5)"
+	0.0 [label=0.0]
+	"" -> "dst_bytes5 > 0.7950000166893005)"
+	"(src_bytes" [label="(src_bytes <= 8.5)"]
+	"(dst_bytes1" [label="(dst_bytes1 <= 10.5)"]
+	"(src_bytes2" [label="(src_bytes2 <= 1.5)"]
+	3.0 [label=3.0]
+	"" -> "src_bytes2 > 1.5)"
+	6.0 [label=6.0]
+	"" -> "dst_bytes1 > 10.5)"
+	6.0 [label=6.0]
+	"" -> "src_bytes > 8.5)"
+	"(dst_bytes2" [label="(dst_bytes2 <= 254.5)"]
+	"(src_bytes" [label="(src_bytes <= 18.5)"]
+	6.0 [label=6.0]
+	"" -> "src_bytes > 18.5)"
+	0.0 [label=0.0]
+	"" -> "dst_bytes2 > 254.5)"
+	"(src_bytes" [label="(src_bytes <= 242.5)"]
+	0.0 [label=0.0]
+	"" -> "src_bytes > 242.5)"
+	5.0 [label=5.0]
+}
