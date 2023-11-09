@@ -2,6 +2,10 @@
 
 This project is organized as follows:
 
+# Project Structure
+
+This project is organized as follows:
+
 ```plaintext
 project_name/
 │
@@ -28,9 +32,18 @@ project_name/
 │   ├── api.py                    # API module for serving predictions
 │   └── app.py                    # Main application module
 │
+├── tests/                        # Test files including data and notebooks
+│   ├── Cleaned_data.csv
+│   ├── Test_data.csv
+│   ├── Train_data.csv
+│   ├── train_model_with_scikit.ipynb
+│   └── trained_model.ipynb
+│
+├── venv/                         # Virtual environment folder
+│
 ├── README.md                     # Project description and instructions
 ├── requirements.txt              # Required packages for the project to run
-└── .gitignore                    # Specifies 
+└── .gitignore                    # Specifies intentionally untracked files to ignore
 ```
 
 | Training with Outliers            | Pros                                                        | Cons                                               |
