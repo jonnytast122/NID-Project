@@ -1,3 +1,8 @@
+# Project Structure
+
+This project is organized as follows:
+
+```plaintext
 project_name/
 │
 ├── notebooks/                    # Jupyter notebooks for exploration and model training
@@ -25,8 +30,8 @@ project_name/
 │
 ├── README.md                     # Project description and instructions
 ├── requirements.txt              # Required packages for the project to run
-└── .gitignore                    # Specifies intentionally untracked files to ignore
-
+└── .gitignore                    # Specifies 
+```
 
 | Training with Outliers            | Pros                                                        | Cons                                               |
 |-----------------------------------|-------------------------------------------------------------|----------------------------------------------------|

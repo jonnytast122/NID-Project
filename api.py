@@ -1,10 +1,11 @@
 from flask import Flask, request
-from flask_restx import Api, Resource, fields
+from flask_restx import Api, Resource, fields, Namespace
 import pickle
 import numpy as np
 
 app = Flask(__name__)
 api = Api(app, title='Attack Prediction App', version='1.0')
+my_namespace = Namespace('My Custom Namespace', description='API')
 
 # Load the model and label encoder
 with open("C:\\Users\\ASUS\\Desktop\\BigData\\Final Project\\CODE\\random_forest_model.pkl", 'rb') as model_file:
@@ -30,7 +31,7 @@ input_model = api.model('InputData', {
     'dst_host_serror_rate': fields.Float(required=True),
     'dst_host_srv_serror_rate': fields.Float(required=True)
 })
-
+api.add_namespace(my_namespace)
 @api.route('/predict')
 class Predict(Resource):
     @api.expect(input_model)
