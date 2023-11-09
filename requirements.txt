@@ -1,0 +1,12 @@
+pyspark
+matplotlib
+pandas
+plotly
+prettytable
+graphviz
+seaborn
+scikit-learn
+Flask
+flask-restx
+numpy
+streamlit
