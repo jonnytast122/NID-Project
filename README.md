@@ -2,10 +2,6 @@
 
 This project is organized as follows:
 
-# Project Structure
-
-This project is organized as follows:
-
 ```plaintext
 project_name/
 │
