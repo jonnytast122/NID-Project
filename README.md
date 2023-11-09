@@ -1,3 +1,33 @@
+project_name/
+│
+├── notebooks/                    # Jupyter notebooks for exploration and model training
+│   ├── trained_model.ipynb
+│   ├── training_with_outlier.ipynb
+│   └── training_without_outlier.ipynb
+│
+├── data/                         # Data directory for storing datasets
+│   ├── Cleaned_data.csv
+│   ├── Data.csv
+│   ├── Test_data.csv
+│   └── Train_data.csv
+│
+├── models/                       # Serialized models and other related files
+│   ├── label_encoder.pkl
+│   └── random_forest_model.pkl
+│
+├── graphs/                       # Directory for graph representations and visualizations
+│   ├── Digraph.gv
+│   └── Digraph.gv.pdf
+│
+├── src/                          # Source code for the project
+│   ├── api.py                    # API module for serving predictions
+│   └── app.py                    # Main application module
+│
+├── README.md                     # Project description and instructions
+├── requirements.txt              # Required packages for the project to run
+└── .gitignore                    # Specifies intentionally untracked files to ignore
+
+
 | Training with Outliers            | Pros                                                        | Cons                                               |
 |-----------------------------------|-------------------------------------------------------------|----------------------------------------------------|
 | More data                         | Provides more data points for the model to learn from.       | May lead to overfitting to the outliers.           |
